@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+    <link
+      href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/styles.css"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+        
+    <title>Услуги - ADI Studio</title>
+   
+    <link rel="icon" type="image/x-icon" href="/media/favicon.png">
+</head>
+
+<body>
+    <header id="menu">
+        <div class="logo-container">
+            <a href="/ru/"><img height="75rem" src="/media/logo-adistudio.png" alt="Logo"></a>
+        </div>
+
+        <button id="button-open-menu" onclick="openMenu()">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+        </button>
+
+        <nav>
+            <button id="button-close-menu" onclick="closeMenu()">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+            </button>
+
+            <div class="navbar">
+                <li><a href="/ru/">ГЛАВНАЯ</a></li>
+                <li><a href="/ru/services/"><span>УСЛУГИ</span></a></li>
+                <li><a href="/ru/portfolio">ПОРТФОЛИО</a></li>
+                <li><a href="/ru/calculator">РАСЧЁТ СТОИМОСТИ</a></li>
+                <li><a href="/ru/contact">КОНТАКТЫ</a></li>
+            </div>
+
+            <div class="navbar">
+                <div class="socials-container">
+                    <div><a href="https://wa.me/37369102421" target="_blank">
+                        <svg fill="#000000" version="1.1" id="Icons" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M17,0C8.7,0,2,6.7,2,15c0,3.4,1.1,6.6,3.2,9.2l-2.1,6.4c-0.1,0.4,0,0.8,0.3,1.1C3.5,31.9,3.8,32,4,32c0.1,0,0.3,0,0.4-0.1 l6.9-3.1C13.1,29.6,15,30,17,30c8.3,0,15-6.7,15-15S25.3,0,17,0z M25.7,20.5c-0.4,1.2-1.9,2.2-3.2,2.4C22.2,23,21.9,23,21.5,23 c-0.8,0-2-0.2-4.1-1.1c-2.4-1-4.8-3.1-6.7-5.8L10.7,16C10.1,15.1,9,13.4,9,11.6c0-2.2,1.1-3.3,1.5-3.8c0.5-0.5,1.2-0.8,2-0.8 c0.2,0,0.3,0,0.5,0c0.7,0,1.2,0.2,1.7,1.2l0.4,0.8c0.3,0.8,0.7,1.7,0.8,1.8c0.3,0.6,0.3,1.1,0,1.6c-0.1,0.3-0.3,0.5-0.5,0.7 c-0.1,0.2-0.2,0.3-0.3,0.3c-0.1,0.1-0.1,0.1-0.2,0.2c0.3,0.5,0.9,1.4,1.7,2.1c1.2,1.1,2.1,1.4,2.6,1.6l0,0c0.2-0.2,0.4-0.6,0.7-0.9 l0.1-0.2c0.5-0.7,1.3-0.9,2.1-0.6c0.4,0.2,2.6,1.2,2.6,1.2l0.2,0.1c0.3,0.2,0.7,0.3,0.9,0.7C26.2,18.5,25.9,19.8,25.7,20.5z"></path> </g></svg>
+                    </a></div>
+                    <div><a href="https://www.instagram.com/adi.studio/" target="_blank">
+                        <svg fill="#000000" version="1.1" id="Icons" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M23,0H9C4,0,0,4,0,9v6v8c0,5,4,9,9,9h14c5,0,9-4,9-9v-8V9C32,4,28,0,23,0z M16,10c3.3,0,6,2.7,6,6s-2.7,6-6,6s-6-2.7-6-6 S12.7,10,16,10z M22,7c0-1.1,0.9-2,2-2s2,0.9,2,2s-0.9,2-2,2S22,8.1,22,7z"></path> </g></svg>
+                    </a></div>
+                    <div><a href="https://www.youtube.com/channel/UCehkBlBi9gyPAFD2iz4A66g" target="_blank">
+                        <svg fill="#000000" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 96.875 96.875" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M95.201,25.538c-1.186-5.152-5.4-8.953-10.473-9.52c-12.013-1.341-24.172-1.348-36.275-1.341 c-12.105-0.007-24.266,0-36.279,1.341c-5.07,0.567-9.281,4.368-10.467,9.52C0.019,32.875,0,40.884,0,48.438 C0,55.992,0,64,1.688,71.336c1.184,5.151,5.396,8.952,10.469,9.52c12.012,1.342,24.172,1.349,36.277,1.342 c12.107,0.007,24.264,0,36.275-1.342c5.07-0.567,9.285-4.368,10.471-9.52c1.689-7.337,1.695-15.345,1.695-22.898 C96.875,40.884,96.889,32.875,95.201,25.538z M35.936,63.474c0-10.716,0-21.32,0-32.037c10.267,5.357,20.466,10.678,30.798,16.068 C56.434,52.847,46.23,58.136,35.936,63.474z"></path> </g> </g></svg>
+                    </a></div>
+                </div>
+                <br>
+                <div class="socials-container"><a href="/ro/services">RO</a>|<a href="/ru/services"><span>RU</span></a>|<a href="/en/services">EN</a></div>
+            </div>
+        </nav>    
+    </header>
+
+    <div id="page-content-light">
+        <div class="booklet-wrapper">
+            <div class="container-services">
+                <div class="container-services-general">
+                    <h1>Наши услуги: <br> •Проектирование •Производство •Предсборка •Монтаж</h1>
+
+                    <p>
+                        Мы проектируем и изготавливаем лёгкие металлоконструкции, адаптированные под требования каждого клиента.
+                        Гарантируем точность исполнения и идеальную стыковку профилей.
+                        Экономим время и повышаем эффективность финального монтажа конструкции на объекте.
+                        Накопленный опыт отражается в качестве, надёжности и скорости реализации каждого проекта.
+                    </p>
+                    
+                    <span>
+                        <svg height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M3.50002 12C3.50002 7.30558 7.3056 3.5 12 3.5C16.6944 3.5 20.5 7.30558 20.5 12C20.5 16.6944 16.6944 20.5 12 20.5C10.3278 20.5 8.77127 20.0182 7.45798 19.1861C7.21357 19.0313 6.91408 18.9899 6.63684 19.0726L3.75769 19.9319L4.84173 17.3953C4.96986 17.0955 4.94379 16.7521 4.77187 16.4751C3.9657 15.176 3.50002 13.6439 3.50002 12ZM12 1.5C6.20103 1.5 1.50002 6.20101 1.50002 12C1.50002 13.8381 1.97316 15.5683 2.80465 17.0727L1.08047 21.107C0.928048 21.4637 0.99561 21.8763 1.25382 22.1657C1.51203 22.4552 1.91432 22.5692 2.28599 22.4582L6.78541 21.1155C8.32245 21.9965 10.1037 22.5 12 22.5C17.799 22.5 22.5 17.799 22.5 12C22.5 6.20101 17.799 1.5 12 1.5ZM14.2925 14.1824L12.9783 15.1081C12.3628 14.7575 11.6823 14.2681 10.9997 13.5855C10.2901 12.8759 9.76402 12.1433 9.37612 11.4713L10.2113 10.7624C10.5697 10.4582 10.6678 9.94533 10.447 9.53028L9.38284 7.53028C9.23954 7.26097 8.98116 7.0718 8.68115 7.01654C8.38113 6.96129 8.07231 7.046 7.84247 7.24659L7.52696 7.52195C6.76823 8.18414 6.3195 9.2723 6.69141 10.3741C7.07698 11.5163 7.89983 13.314 9.58552 14.9997C11.3991 16.8133 13.2413 17.5275 14.3186 17.8049C15.1866 18.0283 16.008 17.7288 16.5868 17.2572L17.1783 16.7752C17.4313 16.5691 17.5678 16.2524 17.544 15.9269C17.5201 15.6014 17.3389 15.308 17.0585 15.1409L15.3802 14.1409C15.0412 13.939 14.6152 13.9552 14.2925 14.1824Z" fill="#ffffff"></path> </g></svg>
+                        <a href="https://wa.me/37369102421" target="_blank">WhatsApp</a>
+                    </span>
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg>
+                        <a href="mailto:">ion.zberea@gmail.com</a> 
+                    </span>
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M760-480q0-117-81.5-198.5T480-760v-80q75 0 140.5 28.5t114 77q48.5 48.5 77 114T840-480h-80Zm-160 0q0-50-35-85t-85-35v-80q83 0 141.5 58.5T680-480h-80Zm198 360q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg>
+                        <a href="tel:+">+373 69102421</a>
+                    </span><br>
+                </div>
+                <br>
+                <div class="container-services-types">
+                    <div class="wrapper-services-types">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#FFFFFF"><path d="M718-180h33v-110h110v-33H751v-110h-33v110H608v33h110v110Zm14.5 60Q655-120 600-175.5T545-307q0-78.43 54.99-133.72Q654.98-496 733-496q77 0 132.5 55.28Q921-385.43 921-307q0 76-55.5 131.5t-133 55.5ZM160-200v-480l320-240 320 240v134q-14-5-29-7t-31-3v-94L480-845 220-650v390h270q2.6 15.84 7.8 30.92Q503-214 510-200H160Zm320-353Z"/></svg>
+                        </span>
+                        <span>Мансарды / Надстройки</span>
+                    </div>
+                    <div class="wrapper-services-types">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#FFFFFF"><path d="M80-80v-481l280-119v80l200-81v121h320v480H80Zm60-60h680v-359.8H500V-592l-200 80v-79l-160 71v380Zm310-100h60v-160h-60v160Zm-160 0h60v-160h-60v160Zm320 0h60v-160h-60v160Zm270-320H700l40-320h100l40 320ZM140-140h680-680Z"/></svg>
+                        </span>
+                        <span>Промышленные Объекты</span>
+                    </div>
+                    <div class="wrapper-services-types">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#FFFFFF"><path d="M201-160v-392L76-457l-36-47 440-336 178 136v-96h100v172l162 124-37 47-125-96v393H530v-240H430v240H201Zm60-60h109v-240h220v240h108v-378L480-765 261-598v378Zm134-350h170q0-33-25.5-54.5T480-646q-34 0-59.5 21.34T395-570Zm-25 350v-240h220v240-240H370v240Z"/></svg>
+                        </span>
+                        <span>Жилые Дома</span>
+                    </div>
+                    <div class="wrapper-services-types">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#FFFFFF"><path d="M840-519v339q0 24-18 42t-42 18H179q-24 0-42-18t-18-42v-339q-28-24-37-59t2-70l43-135q8-27 28-42t46-15h553q28 0 49 15.5t29 41.5l44 135q11 35 1.5 70T840-519Zm-270-31q29 0 49-19t16-46l-25-165H510v165q0 26 17 45.5t43 19.5Zm-187 0q28 0 47.5-19t19.5-46v-165H350l-25 165q-4 26 14 45.5t44 19.5Zm-182 0q24 0 41.5-16.5T263-607l26-173H189l-46 146q-10 31 8 57.5t50 26.5Zm557 0q32 0 50.5-26t8.5-58l-46-146H671l26 173q3 24 20.5 40.5T758-550ZM179-180h601v-311q1 1-6.5 1H758q-25 0-47.5-10.5T666-533q-16 20-40 31.5T573-490q-30 0-51.5-8.5T480-527q-15 18-38 27.5t-52 9.5q-31 0-55-11t-41-32q-24 21-47 32t-46 11h-13.5q-6.5 0-8.5-1v311Zm601 0H179h601Z"/></svg>
+                        </span>
+                        <span>Коммерческие Конструкции</span>
+                    </div>
+                    <div class="wrapper-services-types">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#e3e3e3"><path d="m80-80 80-400h640l80 400H80Zm40-740v-60h120v60H120Zm34 680h296v-110H176l-22 110Zm80-460-43-42 85-85 43 42-85 85Zm-46 290h262v-110H210l-22 110Zm167-442.5Q304-805 300-880h60q3 50 37 85t83 35q49 0 83-35t37-85h60q-4 75-55 127.5T480-700q-74 0-125-52.5ZM480-880Zm-30 360v-120h60v120h-60Zm60 380h296l-22-110H510v110Zm0-170h262l-22-110H510v110Zm216-291-85-85 42-42 86 84-43 43Zm-6-219v-60h120v60H720Z"/></svg>
+                        </span>
+                        <span>Опоры Солнечных Панелей</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container-services-steps">
+            <div class="wrapper-services-step">
+                <div class="wrapper-services-img">
+                    <img src="/media/services-1.png" alt="">
+                </div>
+                <div class="wrapper-services-text">
+                   <h1> 
+                        <svg width="100px" height="100px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M2 2H22V22H2V2ZM11.9805 17H13.9561V7.0332H13.7441L9.62207 8.50977V10.1162L11.9805 9.38477V17Z"></path> </g></svg>
+                        Проектирование
+                    </h1>
+                    <p> Мы проектируем лёгкие металлоконструкции, используя современные и оптимизированные решения, адаптированные под требования каждого клиента. Обеспечиваем техническую точность, экономическую эффективность и соответствие действующим стандартам.
+                </div>
+            </div>
+
+            <div class="wrapper-services-step">
+                <div class="wrapper-services-text">
+                    <h1>
+                        <svg width="100px" height="100px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M2 2H22V22H2V2ZM9.15723 17H15.9795V15.4072H11.7002L13.9629 13.0215C14.5827 12.3424 15.0202 11.7477 15.2754 11.2373C15.5306 10.7269 15.6582 10.2256 15.6582 9.7334C15.6582 8.83561 15.3734 8.14062 14.8037 7.64844C14.2386 7.15625 13.4434 6.91016 12.418 6.91016C11.748 6.91016 11.1488 7.05371 10.6201 7.34082C10.0915 7.62337 9.68131 8.0153 9.38965 8.5166C9.10254 9.0179 8.95898 9.57161 8.95898 10.1777H10.9414C10.9414 9.67643 11.069 9.27311 11.3242 8.96777C11.584 8.65788 11.9372 8.50293 12.3838 8.50293C12.7985 8.50293 13.1175 8.63053 13.3408 8.88574C13.5641 9.13639 13.6758 9.48275 13.6758 9.9248C13.6758 10.2484 13.5687 10.5902 13.3545 10.9502C13.1449 11.3102 12.819 11.7318 12.377 12.2148L9.15723 15.6465V17Z"></path> </g></svg>
+                        Производство
+                    </h1>
+                    <p> Мы изготавливаем структурные элементы на специализированных предприятиях, используя качественные материалы и передовые технологии. Процесс производства тщательно контролируется для обеспечения долговечности и высоких эксплуатационных характеристик.
+                </div>
+                <div class="wrapper-services-img">
+                    <img src="/media/services-2.png" alt="">
+                </div>
+            </div>
+            
+            <div class="wrapper-services-step">
+                <div class="wrapper-services-img">
+                    <img src="/media/services-3.png" alt="">
+                </div>
+                <div class="wrapper-services-text">
+                    <h1>
+                        <svg width="100px" height="100px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M2 2H22V22H2V2ZM12.2197 11.1484H11.167V12.6934H12.2129C13.3066 12.6934 13.8535 13.1901 13.8535 14.1836C13.8535 14.5938 13.7191 14.9242 13.4502 15.1748C13.1859 15.4209 12.819 15.5439 12.3496 15.5439C11.9395 15.5439 11.5931 15.4255 11.3105 15.1885C11.0326 14.9515 10.8936 14.6462 10.8936 14.2725H8.91797C8.91797 15.1338 9.23242 15.8265 9.86133 16.3506C10.4948 16.8747 11.3083 17.1367 12.3018 17.1367C13.3636 17.1367 14.2158 16.8701 14.8584 16.3369C15.5055 15.8037 15.8291 15.0951 15.8291 14.2109C15.8291 13.6641 15.6901 13.1901 15.4121 12.7891C15.1387 12.388 14.7217 12.0872 14.1611 11.8867C14.6123 11.6816 14.9769 11.3877 15.2549 11.0049C15.5329 10.6221 15.6719 10.2028 15.6719 9.74707C15.6719 8.86296 15.3734 8.17025 14.7764 7.66895C14.1794 7.16309 13.3545 6.91016 12.3018 6.91016C11.6956 6.91016 11.1396 7.02637 10.6338 7.25879C10.1325 7.49121 9.74056 7.81478 9.45801 8.22949C9.18001 8.63965 9.04102 9.10449 9.04102 9.62402H11.0166C11.0166 9.29134 11.1442 9.02246 11.3994 8.81738C11.6546 8.60775 11.9714 8.50293 12.3496 8.50293C12.7689 8.50293 13.097 8.61458 13.334 8.83789C13.5755 9.0612 13.6963 9.37337 13.6963 9.77441C13.6963 10.1891 13.5755 10.5218 13.334 10.7725C13.0924 11.0231 12.721 11.1484 12.2197 11.1484Z"></path> </g></svg>
+                        Предсборка
+                    </h1>
+                    <p> Мы выполняем предварительную сборку компонентов в контролируемых условиях для проверки совместимости и точности исполнения. Этот этап способствует сокращению времени монтажа и минимизации возможных ошибок на строительной площадке.
+                </div>
+            </div>
+            
+            <div class="wrapper-services-step">
+                <div class="wrapper-services-text">
+                    <h1>
+                        <svg width="100px" height="100px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M2 2H22V22H2V2ZM16.1299 13.2539H15.002V7.04688H13.0059L8.85645 13.6025L8.94531 14.8467H13.0264V17H15.002V14.8467H16.1299V13.2539ZM13.0264 13.2539H10.8252L12.8965 9.96582L13.0264 9.74023V13.2539Z"></path> </g></svg>
+                        Монтаж
+                    </h1>
+                    <p> Мы обеспечиваем монтаж металлоконструкций силами квалифицированных бригад, соблюдая установленные сроки и нормы безопасности. Мы фокусируемся на эффективности, качестве и оптимальной интеграции конструкции в общий проект.
+                </div>
+                <div class="wrapper-services-img">
+                    <img src="/media/services-4.png" alt="">
+                </div>
+            </div>
+        </div>
+        
+        <div class="container-portfolio">
+            <span><a href="/portfolio">Наше портфолио</a></span>
+            <div class="container-portfolio-gallery">
+                <div><img src="/media/img-example-house-3.jpg" alt=""></div>
+                <div><img src="/media/img-example-officecars-2.jpg" alt=""></div>
+                <div><img src="/media/img-example-housesmall-2.jpg" alt=""></div>
+                <div><img src="/media/img-example-church-2.jpg" alt=""></div>
+                <div><img src="/media/img-example-trucks-2.jpg" alt=""></div>
+                <div><img src="/media/img-example-extrafloor.jpg" alt=""></div>
+            </div>
+        </div>
+        
+        <footer>
+
+            <span>
+                <big><b>ADI STUDIO</b></big><br> 
+                Мунчештское Шоссе 801 <br>
+                Кишинёв, Молдова <br>
+                <a href="tel:+">+373 69102421</a> <br>
+                <a href="mailto:">ion.zberea@gmail.com</a>  <br>
+            </span>
+                <br>
+            <span>
+                <li><a href="/ru/">ГЛАВНАЯ</a></li>
+                <li><a href="/ru/services/">УСЛУГИ</a></li>
+                <li><a href="/ru/portfolio">ПОРТФОЛИО</a></li>
+                <li><a href="/ru/calculator">РАСЧЁТ СТОИМОСТИ</a></li>
+                <li><a href="/ru/contact">КОНТАКТЫ</a></li>
+            </span>
+
+            <a href="/ru/"><img src="/media/logo-adistudio.png" alt="Logo"></a>
+
+        </footer>
+    </div>
+
+    <script src="/scripts.js"></script>
+</body>
+
+</html>

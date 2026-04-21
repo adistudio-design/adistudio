@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Redirecting…</title>
+  <script>
+    (function(){
+      const available = ['ro','ru','en'];
+      const defaultLang = 'ro';
+      function getPreferred(){
+        try{
+          const stored = localStorage.getItem('lang');
+          if(stored && available.includes(stored)) return stored;
+          const navs = navigator.languages || [navigator.language || navigator.userLanguage || ''];
+          for(const n of navs){
+            if(!n) continue;
+            const lang = n.slice(0,2).toLowerCase();
+            if(available.includes(lang)) return lang;
+          }
+        }catch(e){}
+        return null;
+      }
+
+      const pref = getPreferred() || defaultLang;
+      const parts = window.location.pathname.split('/').filter(Boolean);
+      if(parts.length === 0 || !available.includes(parts[0])){
+        window.location.replace('/' + pref + '/');
+      }
+    })();
+  </script>
+</head>
+<body>
+  <noscript>
+    <meta http-equiv="refresh" content="0;url=/ro/">
+    <a href="/ro/">ROMÂNĂ</a>
+    <br>
+    <a href="/ru/">РУССКИЙ</a>
+    <br>
+    <a href="/en/">ENGLISH</a>
+  </noscript>
+</body>
+</html>
