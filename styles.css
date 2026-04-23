@@ -184,7 +184,7 @@ footer li a:hover::before {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    height: 100vh;
+    height: 100dvh;
     width: 100%;
 }
 
@@ -195,7 +195,7 @@ footer li a:hover::before {
     background-position: center center;  
     background-color: rgba(255, 255, 255, 0.5);
     background-blend-mode: soft-light;
-    height: 100vh;
+    height: 100dvh;
     width: 100%;
 }
 
@@ -224,7 +224,7 @@ footer li a:hover::before {
     justify-content: space-between;
     animation: appear 0.5s ease-in;
     display: flex;
-    height: 100vh;
+    height: 100dvh;
 }
 
 h1, h2, h3 {
@@ -334,7 +334,7 @@ h1, h2, h3 {
     position: relative;
     overflow: hidden;
     padding: 0.5rem;
-    touch-action: pan-x pan-y;
+    touch-action: cross-slide-x;
 }
 
 .image-carousel-track {
@@ -566,7 +566,7 @@ article p {
 
 .container-services {
     animation: appear 0.5s ease-in;
-    height: 100vh; 
+    height: 100dvh; 
     width: 99vw;
     display: block;
     justify-content: center;
@@ -1066,15 +1066,31 @@ article p {
 /* Mobile Version */
 
 @media screen and (max-width: 1060px) {
-       
+          
+    #menu {
+        height: 3rem;
+    }
+
+    #page-content-short {
+        height: 3rem;
+    }
+
+    .page-opening {
+        height: 1vh;
+    }
+
+    h1, h2, h3 {
+        padding: 0.5rem 2rem;
+    }
+
     nav {
-        background-image: linear-gradient(to bottom, rgba(255,255,255,0.85), rgba(255,255,255,0.95), rgba(255,255,255,1), rgba(255,255,255,1), rgba(255,255,255,0.95), rgba(255,255,255,0.75), rgba(255,255,255,0.75));
+        background-image: linear-gradient(to bottom, rgba(255,255,255,0.95), rgba(255,255,255,1), rgba(255,255,255,1), rgba(255,255,255,0.95), rgba(255,255,255,0.75), rgba(255,255,255,0.75));
         box-shadow: var(--shadow-slight);
         position: absolute;
         display: block;
         text-align: center;
 
-        top: 6rem;
+        top: 3.75rem;
         right: -1000%;
         width: 99vw;
         height: 90vh;
@@ -1112,6 +1128,10 @@ article p {
         margin: 1rem;
     }
 
+    .logo-container img {
+        height: 3.5rem;
+    }
+
     .socials-container svg {
         height: 4vmax;
         padding: 1rem;
@@ -1138,13 +1158,13 @@ article p {
         justify-content: center;
         align-items: center;
         text-align: center;
-        padding: 1.75rem;
+        padding: 1.5rem;
         font-size: 2vmax;
     }
 
     .text-container-left {
         width: fit-content;
-        margin: 12vh auto 6vh auto;
+        margin: 8vh auto 5vh auto;
         padding: 0 0 1rem 0;
     }
 
@@ -1296,20 +1316,20 @@ article p {
     .container-services-general {
         width: 85vw;
         max-width: 85vw;
-        margin: 10vh auto;
+        margin: 7vh auto;
         padding: 0.25rem;
     }
 
     .container-services-general h1 {
         font-size: 2.75vmax;
-        line-height: 2.5rem;
+        line-height: 2.25rem;
     }
 
     .container-services-general span {
         display: block;
         margin: 0;
         gap: 0 0.25rem;
-        padding: 1rem 0;
+        padding: 0.75rem 0;
     }
 
     .container-services-general p {
@@ -1317,7 +1337,8 @@ article p {
     }
 
     .container-services-types {
-        margin: auto;
+        max-width: 70vw;
+        margin: -2rem auto;
     }
 
     .container-map {
