@@ -619,6 +619,7 @@ article p {
     gap: 0.5rem;
     justify-content: center;
     text-align: center;
+    align-items: center;
     font-size: 0.95vmax;
 }
 
@@ -1310,7 +1311,7 @@ article p {
     }
 
     .container-services {
-        width: calc(100vw - 3.75rem);
+        width: calc(100vw - 3rem);
     }
 
     .container-services-general {
