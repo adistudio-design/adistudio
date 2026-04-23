@@ -699,7 +699,7 @@ article p {
     clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);
     background-color: rgba(var(--color-metalbackground), 0.1);
 
-    display: flex;
+    display: inline-flex;
     text-align: center;
     align-items: center;
     justify-content: center;
