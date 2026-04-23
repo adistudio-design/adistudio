@@ -184,7 +184,7 @@ footer li a:hover::before {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    height: 100dvh;
+    height: 100vh;
     width: 100%;
 }
 
@@ -195,7 +195,7 @@ footer li a:hover::before {
     background-position: center center;  
     background-color: rgba(255, 255, 255, 0.5);
     background-blend-mode: soft-light;
-    height: 100dvh;
+    height: 100vh;
     width: 100%;
 }
 
@@ -224,7 +224,7 @@ footer li a:hover::before {
     justify-content: space-between;
     animation: appear 0.5s ease-in;
     display: flex;
-    height: 100dvh;
+    height: 100vh;
 }
 
 h1, h2, h3 {
@@ -566,7 +566,7 @@ article p {
 
 .container-services {
     animation: appear 0.5s ease-in;
-    height: 100dvh; 
+    height: 100vh; 
     width: 99vw;
     display: block;
     justify-content: center;
@@ -1084,13 +1084,13 @@ article p {
     }
 
     nav {
-        background-image: linear-gradient(to bottom, rgba(255,255,255,0.95), rgba(255,255,255,1), rgba(255,255,255,1), rgba(255,255,255,0.95), rgba(255,255,255,0.75), rgba(255,255,255,0.75));
+        background-image: linear-gradient(to bottom, rgba(255,255,255,0.95), rgba(255,255,255,1), rgba(255,255,255,1), rgba(255,255,255,0.95), rgba(255,255,255,0.75));
         box-shadow: var(--shadow-slight);
         position: absolute;
         display: block;
         text-align: center;
 
-        top: 3.75rem;
+        top: 4rem;
         right: -1000%;
         width: 99vw;
         height: 90vh;
@@ -1164,7 +1164,7 @@ article p {
 
     .text-container-left {
         width: fit-content;
-        margin: 8vh auto 5vh auto;
+        margin: 7vh auto 4vh auto;
         padding: 0 0 1rem 0;
     }
 
@@ -1337,7 +1337,6 @@ article p {
     }
 
     .container-services-types {
-        max-width: 70vw;
         margin: -2rem auto;
     }
 
