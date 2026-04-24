@@ -1069,9 +1069,15 @@ article p {
 /* Mobile Version */
 
 @media screen and (max-width: 1060px) {
-          
+
+    html {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
     #menu {
         height: 3rem;
+        width: 100%;
     }
 
     #page-content-short {
@@ -1095,7 +1101,7 @@ article p {
 
         top: 4rem;
         right: -1000%;
-        width: 99vw;
+        width: 100%;
         height: 90vh;
         z-index: 999;
 
@@ -1246,7 +1252,7 @@ article p {
         justify-content: center;
         align-items: center;
         text-align: center;
-        width: calc(100vw - 3rem);
+        width: 100%;
         font-size: 1.75vmax;
         margin: 10rem 0;
         padding: 0;
@@ -1300,6 +1306,7 @@ article p {
     .container-portfolio span, .container-portfolio-page span {
         width: 70vw;
         font-size: 2.25vmax;
+        margin: -1rem auto 3rem;
     }
     
    .container-portfolio-gallery div {
@@ -1313,7 +1320,7 @@ article p {
     }
 
     .container-services {
-        width: calc(100vw - 3.25rem);
+        width: 100%;
     }
 
     .container-services-general {
@@ -1341,6 +1348,8 @@ article p {
 
     .container-services-types {
         margin: -2rem auto;
+        gap: 0.35rem;
+        font-size: 1vmax;
     }
 
     .container-map {
