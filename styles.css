@@ -644,6 +644,7 @@ article p {
     align-items: center;
     justify-content: center;
     padding: 5vh 10vw;
+    margin-bottom: 10rem;
 }
 
 .wrapper-services-step {
@@ -705,7 +706,7 @@ article p {
     justify-content: center;
     width: 25vw;
     padding: 1rem;
-    margin: 3rem;
+    margin: 0 auto 3rem;
     font-size: 1.1vmax;
     font-weight: 800;
 }
@@ -1347,7 +1348,7 @@ article p {
     }
 
     .container-services-types {
-        margin: -2rem auto;
+        margin: -3rem auto;
         gap: 0.35rem;
         font-size: 1vmax;
     }
